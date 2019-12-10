@@ -12,8 +12,10 @@ def using_pop(array)
 @continents.pop
 end
 
+using_pop(array)
+
 def pop_with_args(array)
-@small_dogs = @dog_breeds.pop(2)
+@dog_breeds.shift(2)
 end
 
 def using_shift(array)
@@ -25,8 +27,8 @@ ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "
 ice_cream_brands.shift(2)
 end
 
-def using_concat(array1, array2)
-  array1 = array1.concat(array2)
+def using_concat(array, string)
+  @my_favorite_things.concat(@more_favs)
   end
 
 def using_insert(array, string)
@@ -46,9 +48,10 @@ def using_flatten(array)
 end
 
 def using_delete(array, string)
-array.delete(string)
+  @instructors.delete("Steven")
 end
 
-def using_delete_at(array, integer)
-array.delete(array[integer])
+def using_delete_at(array, string)
+  famous_robots = ["Johnny 5", "R2D2", "Robocop"]
+  famous_robots.delete(2)
 end
